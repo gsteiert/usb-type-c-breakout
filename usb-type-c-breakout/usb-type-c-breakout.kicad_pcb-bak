@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 4)
-    (tracks 21)
+    (tracks 30)
     (modules 34)
     (nets 22)
   )
@@ -225,7 +225,7 @@
       (net 2 "Net-(J11-PadA3)"))
   )
 
-  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA936)
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B7D5B) (tstamp 5D2BA936)
     (at 91.5 83 90)
     (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -234,11 +234,13 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 1 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
       ))
-    (pad "1" smd circle (at 1 0 90) (size 0.3 0.3) (layers "F.Cu"))
+    (pad "1" smd circle (at 1 0 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)"))
   )
 
   (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B7C6E) (tstamp 5D2BA921)
@@ -517,7 +519,7 @@
       (net 2 "Net-(J11-PadA3)"))
   )
 
-  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7A47) (tstamp 5D2BA076)
+  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7CFB) (tstamp 5D2BA076)
     (at 96 97 270)
     (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -526,13 +528,13 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 0.75 270) (size 0.3 0.3) (layers "F.Cu")
-      (net 15 "Net-(J10-Pad2)")
+      (net 1 "Net-(J11-PadA2)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -0.75) (end 0 0) (angle -90) (width 0.3))
       ))
     (pad "1" smd circle (at 0.75 0 270) (size 0.3 0.3) (layers "F.Cu")
-      (net 15 "Net-(J10-Pad2)"))
+      (net 1 "Net-(J11-PadA2)"))
   )
 
   (module "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu") (tedit 5B301BBD) (tstamp 5D22C004)
@@ -1279,6 +1281,15 @@
   (gr_line (start 114.75 76.25) (end 114.75 123.75) (layer "Edge.Cuts") (width 0.05))
   (gr_line (start 85.25 76.25) (end 114.75 76.25) (layer "Edge.Cuts") (width 0.05))
 
+  (segment (start 88 82) (end 91.5 82) (width 0.3) (layer "F.Cu") (net 1))
+  (segment (start 92.5 83) (end 92.5 86.75) (width 0.3) (layer "F.Cu") (net 1))
+  (segment (start 88 94) (end 91.5 94) (width 0.3) (layer "F.Cu") (net 2))
+  (segment (start 92.5 93) (end 92.5 89.25) (width 0.3) (layer "F.Cu") (net 2))
+  (segment (start 94.75 89) (end 94.75 97) (width 0.3) (layer "F.Cu") (net 2))
+  (segment (start 94 88.25) (end 93.5 88.25) (width 0.3) (layer "F.Cu") (net 2))
+  (segment (start 93.5 87.75) (end 94 87.75) (width 0.3) (layer "F.Cu") (net 1))
+  (segment (start 95.25 97) (end 95.25 89) (width 0.3) (layer "F.Cu") (net 1))
+  (segment (start 97.7 98.25) (end 96 98.25) (width 0.27) (layer "F.Cu") (net 2))
   (segment (start 105.25 97) (end 105.25 89) (width 0.3) (layer "F.Cu") (net 7))
   (segment (start 106.5 87.75) (end 106 87.75) (width 0.3) (layer "F.Cu") (net 8))
   (segment (start 106 88.25) (end 106.5 88.25) (width 0.3) (layer "F.Cu") (net 7))
