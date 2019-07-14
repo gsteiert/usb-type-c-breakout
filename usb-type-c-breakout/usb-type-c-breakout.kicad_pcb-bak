@@ -3,8 +3,8 @@
   (general
     (thickness 1.6)
     (drawings 4)
-    (tracks 53)
-    (modules 22)
+    (tracks 21)
+    (modules 34)
     (nets 22)
   )
 
@@ -39,7 +39,7 @@
     (user_trace_width 0.125)
     (user_trace_width 0.27)
     (user_trace_width 0.3)
-    (trace_clearance 0.2)
+    (trace_clearance 0.125)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.125)
@@ -124,8 +124,8 @@
   (net 21 "/CC")
 
   (net_class "Default" "This is the default net class."
-    (clearance 0.2)
-    (trace_width 0.25)
+    (clearance 0.125)
+    (trace_width 0.125)
     (via_dia 0.8)
     (via_drill 0.4)
     (uvia_dia 0.3)
@@ -153,7 +153,209 @@
     (add_net "Net-(J6-Pad2)")
   )
 
-  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B76E5) (tstamp 5D2BA425)
+  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B7C05) (tstamp 5D2BAA41)
+    (at 94 89 90)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_25mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1.25 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1.25) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1.25 0 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)"))
+  )
+
+  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7C2B) (tstamp 5D2BAA22)
+    (at 94 89 90)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc0_75mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 0.75 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -0.75) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 0.75 0 90) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B7BDF) (tstamp 5D2BAA02)
+    (at 93.5 86.75 270)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 1 "Net-(J11-PadA2)"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B7C4F) (tstamp 5D2BA94B)
+    (at 93.5 89.25 180)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 180) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 180) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA936)
+    (at 91.5 83 90)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 90) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 90) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B7C6E) (tstamp 5D2BA921)
+    (at 91.5 93)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA90C)
+    (at 93.5 110.75 270)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 270) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 270) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA8F7)
+    (at 93.5 113.25 180)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 180) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 180) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA8E2)
+    (at 91.5 107 90)
+    (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5 90) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1 90) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0 90) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_00mm" (layer "F.Cu") (tedit 5D2B76FE) (tstamp 5D2BA8CD)
+    (at 91.5 117)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_00mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1 0) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7710) (tstamp 5D2BA8AE)
+    (at 96 103 180)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc0_75mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 0.75 180) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -0.75) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 0.75 0 180) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B76E5) (tstamp 5D2BA88F)
+    (at 96 103 180)
+    (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "arc1_25mm" (at 0 -0.5) (layer "F.Fab") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "1" smd custom (at 0 1.25 180) (size 0.3 0.3) (layers "F.Cu")
+      (options (clearance outline) (anchor circle))
+      (primitives
+        (gr_arc (start 0 -1.25) (end 0 0) (angle -90) (width 0.3))
+      ))
+    (pad "1" smd circle (at 1.25 0 180) (size 0.3 0.3) (layers "F.Cu"))
+  )
+
+  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B7796) (tstamp 5D2BA425)
     (at 104 97)
     (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -162,14 +364,16 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 1.25) (size 0.3 0.3) (layers "F.Cu")
+      (net 7 "Net-(J11-PadB10)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -1.25) (end 0 0) (angle -90) (width 0.3))
       ))
-    (pad "1" smd circle (at 1.25 0) (size 0.3 0.3) (layers "F.Cu"))
+    (pad "1" smd circle (at 1.25 0) (size 0.3 0.3) (layers "F.Cu")
+      (net 7 "Net-(J11-PadB10)"))
   )
 
-  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7710) (tstamp 5D2BA406)
+  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7781) (tstamp 5D2BA406)
     (at 104 97)
     (fp_text reference "REF**" (at 0 0.5) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -178,11 +382,13 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 0.75) (size 0.3 0.3) (layers "F.Cu")
+      (net 8 "Net-(J11-PadB11)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -0.75) (end 0 0) (angle -90) (width 0.3))
       ))
-    (pad "1" smd circle (at 0.75 0) (size 0.3 0.3) (layers "F.Cu"))
+    (pad "1" smd circle (at 0.75 0) (size 0.3 0.3) (layers "F.Cu")
+      (net 8 "Net-(J11-PadB11)"))
   )
 
   (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7710) (tstamp 5D2BA3AA)
@@ -293,7 +499,7 @@
       (net 8 "Net-(J11-PadB11)"))
   )
 
-  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B76E5) (tstamp 5D2BA0FC)
+  (module "footprint:arc1_25mm" (layer "F.Cu") (tedit 5D2B7A21) (tstamp 5D2BA0FC)
     (at 96 97 270)
     (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -302,14 +508,16 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 1.25 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -1.25) (end 0 0) (angle -90) (width 0.3))
       ))
-    (pad "1" smd circle (at 1.25 0 270) (size 0.3 0.3) (layers "F.Cu"))
+    (pad "1" smd circle (at 1.25 0 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 2 "Net-(J11-PadA3)"))
   )
 
-  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7710) (tstamp 5D2BA076)
+  (module "footprint:arc0_75mm" (layer "F.Cu") (tedit 5D2B7A47) (tstamp 5D2BA076)
     (at 96 97 270)
     (fp_text reference "REF**" (at 0 0.5 90) (layer "F.SilkS")
       (effects (font (size 1 1) (thickness 0.15)))
@@ -318,11 +526,13 @@
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "1" smd custom (at 0 0.75 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 15 "Net-(J10-Pad2)")
       (options (clearance outline) (anchor circle))
       (primitives
         (gr_arc (start 0 -0.75) (end 0 0) (angle -90) (width 0.3))
       ))
-    (pad "1" smd circle (at 0.75 0 270) (size 0.3 0.3) (layers "F.Cu"))
+    (pad "1" smd circle (at 0.75 0 270) (size 0.3 0.3) (layers "F.Cu")
+      (net 15 "Net-(J10-Pad2)"))
   )
 
   (module "Resistor_SMD:R_0603_1608Metric" (layer "B.Cu") (tedit 5B301BBD) (tstamp 5D22C004)
@@ -1069,6 +1279,12 @@
   (gr_line (start 114.75 76.25) (end 114.75 123.75) (layer "Edge.Cuts") (width 0.05))
   (gr_line (start 85.25 76.25) (end 114.75 76.25) (layer "Edge.Cuts") (width 0.05))
 
+  (segment (start 105.25 97) (end 105.25 89) (width 0.3) (layer "F.Cu") (net 7))
+  (segment (start 106.5 87.75) (end 106 87.75) (width 0.3) (layer "F.Cu") (net 8))
+  (segment (start 106 88.25) (end 106.5 88.25) (width 0.3) (layer "F.Cu") (net 7))
+  (segment (start 104.75 89) (end 104.75 97) (width 0.3) (layer "F.Cu") (net 8))
+  (segment (start 102.3 97.75) (end 104 97.75) (width 0.27) (layer "F.Cu") (net 8))
+  (segment (start 102.3 98.25) (end 104 98.25) (width 0.27) (layer "F.Cu") (net 7))
   (segment (start 107.5 89.25) (end 107.5 89.5) (width 0.3) (layer "F.Cu") (net 7))
   (segment (start 112 94) (end 108.5 94) (width 0.3) (layer "F.Cu") (net 7))
   (segment (start 107.5 93) (end 107.5 89.5) (width 0.3) (layer "F.Cu") (net 7))
@@ -1084,43 +1300,5 @@
   (segment (start 102.3 102.75) (end 102.3 104.05) (width 0.27) (layer "F.Cu") (net 20))
   (segment (start 97.7 102.75) (end 97.7 104.05) (width 0.27) (layer "F.Cu") (net 20))
   (segment (start 97.7 97.75) (end 96 97.75) (width 0.27) (layer "F.Cu") (net 1))
-  (segment (start 97.7 98.25) (end 96 98.25) (width 0.27) (layer "F.Cu") (net 2))
-  (segment (start 88 118) (end 89.79 118) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 89.79 118) (end 92 118) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 92 118) (end 93 117) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 93 117) (end 93 113) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 93 113) (end 93.75 112.25) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 93.75 112.25) (end 94 112.25) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 94 112.25) (end 94.25 112.25) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 95.25001 111.24999) (end 95.25001 103.00001) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 94.25 112.25) (end 95.25001 111.24999) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 95.25001 103.00001) (end 96 102.25002) (width 0.3) (layer "F.Cu") (net 4))
-  (segment (start 96.00002 102.25) (end 96 102.25002) (width 0.27) (layer "F.Cu") (net 4))
-  (segment (start 97.7 102.25) (end 96.00002 102.25) (width 0.27) (layer "F.Cu") (net 4))
-  (segment (start 97.7 101.75) (end 97.5 101.75) (width 0.27) (layer "F.Cu") (net 3))
-  (segment (start 97.7 101.75) (end 96 101.75) (width 0.27) (layer "F.Cu") (net 3))
-  (segment (start 95.7929 101.75) (end 96 101.75) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 94.75 102.7929) (end 95.7929 101.75) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 94.75 111) (end 94.75 102.7929) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 94 111.75) (end 94.75 111) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 93 111) (end 93.75 111.75) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 93.75 111.75) (end 94 111.75) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 88 106) (end 92 106) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 92 106) (end 93 107) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 93 107) (end 93 111) (width 0.3) (layer "F.Cu") (net 3))
-  (segment (start 93.75 88.25) (end 94 88.25) (width 0.3) (layer "F.Cu") (net 2))
-  (segment (start 88 94) (end 92 94) (width 0.3) (layer "F.Cu") (net 2))
-  (segment (start 93 93) (end 93 89) (width 0.3) (layer "F.Cu") (net 2))
-  (segment (start 92 82) (end 93 83) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 93 87) (end 93.75 87.75) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 88 82) (end 92 82) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 94.45712 88) (end 94.5 88) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 93 83) (end 93 87) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 93.75 87.75) (end 93.750008 87.749992) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 93.750008 87.749992) (end 94.207112 87.749992) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 94.207112 87.749992) (end 94.45712 88) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 94.5 88) (end 95.25 88.75) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 95.25 88.75) (end 95.25 97) (width 0.3) (layer "F.Cu") (net 1))
-  (segment (start 94.75 89) (end 94.75 97) (width 0.3) (layer "F.Cu") (net 2))
 
 )
