@@ -223,7 +223,7 @@ Wire Wire Line
 	4600 4500 4600 4600
 Connection ~ 4600 4600
 Wire Wire Line
-	4600 4600 4400 4600
+	4600 4600 4500 4600
 Wire Wire Line
 	6200 2700 6500 2700
 Wire Wire Line
@@ -247,7 +247,7 @@ Wire Wire Line
 	2800 4850 2500 4850
 Connection ~ 6200 4850
 Wire Wire Line
-	6200 4850 2800 4850
+	6200 4850 4500 4850
 Wire Wire Line
 	6200 4750 6200 4850
 Wire Wire Line
@@ -399,4 +399,16 @@ Text Label 4600 1100 0    50   ~ 0
 GND
 Text Label 4650 1800 0    50   ~ 0
 CC
+Wire Wire Line
+	4500 4600 4500 4850
+Connection ~ 4500 4600
+Wire Wire Line
+	4500 4600 4400 4600
+Connection ~ 4500 4850
+Wire Wire Line
+	4500 4850 2800 4850
+Wire Wire Line
+	2500 3100 2500 4350
+Connection ~ 2500 3100
+Connection ~ 2500 4350
 $EndSCHEMATC
