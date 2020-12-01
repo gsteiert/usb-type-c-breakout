@@ -7,7 +7,7 @@ DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
 F0 "J" 10 120 50 H V C CNN
 F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 " ~" 0 0 50 H I C CNN
 $FPLIST
  *BNC*
  *SMA*
@@ -32,7 +32,7 @@ DEF Connector_Generic_Conn_02x04_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
 F1 "Connector_Generic_Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  Connector*:*_2x??_*
 $ENDFPLIST
@@ -63,8 +63,7 @@ DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
 F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
-F3 "" 150 -50 50 H I C CNN
-ALIAS USB_B_Mini
+F3 "~" 150 -50 50 H I C CNN
 $FPLIST
  USB*
 $ENDFPLIST
@@ -99,7 +98,7 @@ DEF Device_R_US R 0 0 N Y 1 F N
 F0 "R" 100 0 50 V V C CNN
 F1 "Device_R_US" -100 0 50 V V C CNN
 F2 "" 40 -10 50 V I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "~" 0 0 50 H I C CNN
 $FPLIST
  R_*
 $ENDFPLIST
@@ -114,11 +113,28 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# custom_USB_C_Plug
+# Graphic_GS_logo-custom
 #
-DEF custom_USB_C_Plug J 0 40 Y Y 1 F N
+DEF Graphic_GS_logo-custom GS 0 0 N N 1 F N
+F0 "GS" 150 -200 50 H I C CNN
+F1 "Graphic_GS_logo-custom" 0 250 50 H I C CNN
+F2 "footprint:gs_200mil" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 0 200 0 1 0 N
+P 2 0 1 0 0 -200 200 0 N
+P 4 0 1 0 -100 0 0 -100 0 -72 -72 0 N
+P 6 0 1 0 0 200 -200 0 0 -200 100 0 -100 0 0 200 N
+P 6 0 1 0 200 0 130 70 0 70 0 90 110 90 0 200 N
+X GS 1 0 0 0 U 50 50 1 1 U N
+ENDDRAW
+ENDDEF
+#
+# usb-type-c-breakout-rescue_USB_C_Plug-custom
+#
+DEF usb-type-c-breakout-rescue_USB_C_Plug-custom J 0 40 Y Y 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "custom_USB_C_Plug" 0 100 50 H V C CNN
+F1 "usb-type-c-breakout-rescue_USB_C_Plug-custom" 0 100 50 H V C CNN
 F2 "" 0 250 50 H I C CNN
 F3 "" 0 250 50 H I C CNN
 DRAW

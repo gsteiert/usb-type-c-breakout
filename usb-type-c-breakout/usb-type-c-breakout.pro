@@ -1,4 +1,4 @@
-update=Mon 15 Jul 2019 01:04:46 AM UTC
+update=11/30/2020 8:31:18 PM
 version=1
 last_client=kicad
 [general]
@@ -12,22 +12,33 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[LibeditFrame]
+version=1
+[SchematicFrame]
+version=1
+[sheetnames]
+1=00000000-0000-0000-0000-00005fcf8096:
 [pcbnew]
 version=1
 PageLayoutDescrFile=
 LastNetListRead=usb-type-c-breakout.net
+LastSTEPExportPath=
+LastIDFExportPath=
+LastVRMLExportPath=
+LastSpecctraDSNExportPath=
+LastGenCADExportPath=
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
-RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.125
 MinViaDiameter=0.5
 MinViaDrill=0.25
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
+RequireCourtyardDefinitions=0
+ProhibitOverlappingCourtyards=1
 CopperEdgeClearance=0.01
 TrackWidth1=0.125
 TrackWidth2=0.125
@@ -61,10 +72,12 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
+DimensionUnits=0
+DimensionPrecision=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
